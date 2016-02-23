@@ -1,0 +1,42 @@
+#!/bin/bash
+#
+# Sets n cycles of 20-5 minutes and runs countdown timers
+# Alerts user at the end of each period
+#
+# Copyright (C)   2016    Madhav Datt
+# http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
+#
+
+# Check for number of arguments passed while executing script
+# Reject cases if more than 1 argument/non-integer argument
+if [ $# != 1 ] || [[ $1 =~ "^[0-9]+$" ]]
+then
+    printf "Usage: ./timer number_of_cycles\n";
+
+# Execute only for one argument passed case
+else
+    for ((j = 0; j < $1; j++))
+    do
+        # 20 minute period initiated
+        TIME_MIN=20
+        for i in $(seq $(($TIME_MIN*60)) -1 1)
+        do
+            # Display remaining time as countdown timer
+            printf "\r%02d:%02d" $(( (i/60)%60)) $((i%60));
+            sleep 1;
+        done
+        # Set to 00:00 at end of time period
+        printf "\r00:00";
+
+        # 5 minute period initiated
+        TIME_MIN=5
+        for i in $(seq $(($TIME_MIN*60)) -1 1)
+        do
+            # Display remaining time as countdown timer
+            printf "\r%02d:%02d" $(( (i/60)%60)) $((i%60));
+            sleep 1;
+        done
+        # Set to 00:00 at end of time period
+        printf "\r00:00";
+    done
+fi

@@ -1,0 +1,9 @@
+#!/bin/bash
+#
+# Sets n cycles of 20-5 minutes and runs countdown timers
+# Alerts user at the end of each period
+# Shuts down browser windows to help focus during 20-minute work periods
+#
+# Copyright (C)   2016    Madhav Datt
+# http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
+#
