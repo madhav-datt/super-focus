@@ -8,7 +8,7 @@
 
 if [$# != 1]
 then
-    printf "Usage: \n";
+    printf "Usage: ./timer number_of_cycles\n";
 else
     for ((j = 0; j < $1; j++))
     do
