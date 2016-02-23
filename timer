@@ -1,0 +1,31 @@
+#!/bin/bash
+#
+# Sets n cycles of 20-5 minutes and runs countdown timers
+#
+# Copyright (C)   2016    Madhav Datt
+# http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
+#
+
+if [$# != 1]
+then
+    printf "Usage: \n";
+else
+    for ((j = 0; j < $1; j++))
+    do
+        TIME_MIN=20
+        for i in $(seq $(($TIME_MIN*60)) -1 1)
+        do
+            printf "\r%02d:%02d" $(( (i/60)%60)) $((i%60));
+            sleep 1;
+        done
+        printf "\r00:00";
+
+        TIME_MIN=5
+        for i in $(seq $(($TIME_MIN*60)) -1 1)
+        do
+            printf "\r%02d:%02d" $(( (i/60)%60)) $((i%60));
+            sleep 1;
+        done
+        printf "\r00:00";
+    done
+fi
