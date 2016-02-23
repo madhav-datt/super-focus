@@ -17,20 +17,26 @@ then
 else
     for ((j = 0; j < $1; j++))
     do
+        # 20 minute period initiated
         TIME_MIN=20
         for i in $(seq $(($TIME_MIN*60)) -1 1)
         do
+            # Display remaining time as countdown timer
             printf "\r%02d:%02d" $(( (i/60)%60)) $((i%60));
             sleep 1;
         done
+        # Set to 00:00 at end of time period
         printf "\r00:00";
 
+        # 5 minute period initiated
         TIME_MIN=5
         for i in $(seq $(($TIME_MIN*60)) -1 1)
         do
+            # Display remaining time as countdown timer
             printf "\r%02d:%02d" $(( (i/60)%60)) $((i%60));
             sleep 1;
         done
+        # Set to 00:00 at end of time period
         printf "\r00:00";
     done
 fi
