@@ -12,7 +12,7 @@
 # Reject cases if more than 1 argument/non-integer argument
 if [ $# != 1 ] || [[ $1 =~ "^[0-9]+$" ]]
 then
-    printf "Usage: ./timer number_of_cycles\n";
+    printf "Usage: prod_timer number_of_cycles\n";
 
 # Execute only for one argument passed case
 else
