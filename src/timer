@@ -50,4 +50,6 @@ else
             notify-send "You took a 5 minute break. Time to start again!";
         fi
     done
+    # Notify at the end of required cycles
+    notify-send "You have completed $# 20-5 minute cycles";
 fi
