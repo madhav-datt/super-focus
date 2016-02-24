@@ -41,5 +41,8 @@ else
         done
         # Set to 00:00 at end of time period
         printf "\r00:00";
+        # Beep and send alert at the end of each period
+        beep; beep; beep;
+        notify-send "Time to get back to work";
     done
 fi
