@@ -27,7 +27,7 @@ else
         done
         # Set to 00:00 at end of time period
         printf "\r00:00";
-        # Beep and send alert at the end of each period
+        # Beep and send notification at the end of each period
         beep; beep; beep;
         notify-send "You have worked for 20 minutes. Take a break!";
 
@@ -41,8 +41,13 @@ else
         done
         # Set to 00:00 at end of time period
         printf "\r00:00";
-        # Beep and send alert at the end of each period
+        # Beep at the end of each period
         beep; beep; beep;
-        notify-send "Time to get back to work";
+
+        # Send "end of break" notification if not the end of last cycle
+        if [ $j != $1 - 1 ]
+        then
+            notify-send "You took a 5 minute break. Time to start again!";
+        fi
     done
 fi
