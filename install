@@ -8,15 +8,23 @@
 # http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
 #
 
+# Install packages required for beep
 sudo modprobe pcspkr
 sudo apt-get install beep
+
+# Move super-focus to /etc
 cd /etc
 mkdir super-focus
 mv ~/Downloads/super-focus/* /etc/super-focus
 cd super-focus
+
+# Grant execute permissions to shell scripts
 chmod 755 src/prod_timer
 chmod 755 src/timer
 
+# Add permanent aliases for scripts
+cat aliases.txt >> ~/.bash_aliases
 . ~/.bashrc
 
+# Clean downloaded folders
 rm -rf ~/Downloads/super-focus
