@@ -1,7 +1,7 @@
 # Alias to run regular timer from command line
 # Doesn't close browser windows
-alias focus=/etc/super-focus/src/timer;
+alias focus='. /etc/super-focus/src/timer'
 
 # Alias to run productivity timer from command line
 # Closes browser windows
-alias super-focus=/etc/super-focus/src/prod_timer;
+alias super-focus='. /etc/super-focus/src/prod_timer'

@@ -9,8 +9,8 @@
 #
 
 # Install packages required for beep
-sudo modprobe pcspkr
-sudo apt-get install beep
+modprobe pcspkr
+apt-get install beep
 
 # Move super-focus to /etc
 cd /etc
@@ -28,3 +28,4 @@ cat aliases.txt >> ~/.bash_aliases
 
 # Clean downloaded folders
 rm -rf ~/Downloads/super-focus
+rm ~/Downloads/super-focus-v2.0.zip
