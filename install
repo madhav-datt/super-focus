@@ -1,0 +1,13 @@
+#!/bin/bash
+#
+# Install programs required for running timers
+#
+#
+# Copyright (C)   2016    Madhav Datt
+# http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
+#
+
+sudo modprobe pcspkr;
+sudo apt-get install beep;
+chmod 755 src/prod_timer;
+chmod 755 src/timer;
