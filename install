@@ -8,10 +8,15 @@
 # http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
 #
 
-sudo modprobe pcspkr;
-sudo apt-get install beep;
-chmod 755 src/prod_timer;
-chmod 755 src/timer;
+sudo modprobe pcspkr
+sudo apt-get install beep
+cd /etc
+mkdir super-focus
+mv ~/Downloads/super-focus/* /etc/super-focus
+cd super-focus
+chmod 755 src/prod_timer
+chmod 755 src/timer
 
+. ~/.bashrc
 
-. ~/.bashrc;
+rm -rf ~/Downloads/super-focus
