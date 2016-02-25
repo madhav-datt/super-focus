@@ -1,2 +1,2 @@
 # super-focus
-20-5-20 Minimalistic command line productivity hack 
+Minimalistic command line productivity hack based on the [Pomodoro Technique](http://pomodorotechnique.com/).
