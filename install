@@ -14,4 +14,4 @@ chmod 755 src/prod_timer;
 chmod 755 src/timer;
 
 
-. ~/.bashrc
+. ~/.bashrc;
