@@ -42,7 +42,7 @@ The `super-focus` timer is a [Mode 2](#mode2) type timer and can be run like thi
     
 Replace `[number of cycles]` with the number of cycles you want to run the timer for.
 
-At the end of each work/break period, a beep sound :bell: and a pop-up notification will let you know about the end of the period.
+At the end of each work/break period, a beep sound :bell: and a pop-up notification :speech_balloon: will let you know about the end of the period.
 
 ## Reporting Issues
 
