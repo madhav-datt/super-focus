@@ -24,7 +24,7 @@ The program uses `beep` for end-of-period notifications. The above commands will
     
 ## How to Use super-focus
 
-End of period notifications ----
+At the end of each work and break period, the program will give you a pop-up notification and a beep to remind you to get back to work or take a break.
 
 ### _focus_ Timer :hourglass:
 
