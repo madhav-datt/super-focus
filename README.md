@@ -22,9 +22,11 @@ The second mode also is a timer with cycles consisting of a 20-minute work perio
     
 The program uses `beep` for end-of-period notifications. The above commands will install `beep` also.
     
-## How to Use super-focus
+## How to Use super-focus :alarm_clock:
 
 At the end of each work and break period, the program will give you a pop-up notification and a beep to remind you to get back to work or take a break.
+
+![Notifications Example](https://github.com/madhav-datt/super-focus/blob/master/Resources/Notification_Example.png)
 
 ### _focus_ Timer :hourglass:
 
