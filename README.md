@@ -12,7 +12,7 @@ The second mode also is a timer with cycles consisting of a 20-minute work perio
 * <a name="mode1">**Mode 1**</a>: `focus` - Cycles of 20-5 Minutes. Browser processes not killed.
 * <a name="mode2">**Mode 2**</a>: `super-focus` - Cycles of 20-5 Minutes. Browser processes killed during the 20-minute work period.
 
-## Installing `super-focus`
+## Installing super-focus
 
     $ wget -P ~/Downloads https://github.com/madhav-datt/super-focus/archive/super-focus-v2.0.zip
     $ unzip ~/Downloads/super-focus-v2.0.zip
